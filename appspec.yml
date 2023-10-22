@@ -1,13 +1,6 @@
 version: 0.0
 os: linux
-files:
-  - source: /
-    destination: /var/www/
-permissions:
-  - object: /var/www/
-    owner: root
-    group: root
-    mode: 777
+
 hooks:
   ApplicationStop:
     - location: scripts/stop_container.sh
